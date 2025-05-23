@@ -1,4 +1,4 @@
-week,category,weekly_rank,show_title,season_title,weekly_hours_viewed,Duration,weekly_views,cumulative_weeks_in_top_10,is_staggered_launch,episode_launch_details
+week,category,weekly_rank,Movie Name,season_title,weekly_hours_viewed,Duration,weekly_views,cumulative_weeks_in_top_10,is_staggered_launch,episode_launch_details
 2023-12-17,Films (English),1,Leave the World Behind,,106200000,2.3667,44900000.0,2,False,
 2023-12-17,Films (English),2,Chicken Run: Dawn of the Nugget,,20300000,1.7,11900000.0,1,False,
 2023-12-17,Films (English),3,Leo,,16800000,1.7833,9400000.0,4,False,
