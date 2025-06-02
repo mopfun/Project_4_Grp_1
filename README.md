@@ -9,7 +9,23 @@ To see which model would produce the best accuracy preduction model, we tested o
 
 Once we got the machine learning models completed, we worked on integrating the random forest model into the flask API program so that we could create the HTML API to run the preductions. After lots of trial and error, we concluded that the following parameters need to be filled out in order to successfully run the program: IMDb Rating (1-10), Meta Rcore (1-100), Rating Label, Weekly Hours Viewed, Votes, Year, Genre, Cast 1 (at least one cast member), and Director. Once all these fields have been filled, it will produce one of the two messages, 'Yes, it will be in the Netflix Top 10!' or 'Sorry, this movie will not make the cut.'
 
-
-## Final thoughts
-There were areas in which we definitely believe woudl help improved our project, one of which would be the more time in general, but also to spend to gather more data engineering features to boost our API/flask program. Secondly, with more time to troubleshoot each of our tasks, it would ultimately help all of us to know how much of the data minipulation would allow all of us to expand the abilities in which we can showcase the more varied visualizations. 
+There were areas in which we definitely believe would help improved our project, one of which would be the more time in general, but also to spend to gather more data engineering features to boost our API/flask program. Secondly, with more time to troubleshoot each of our tasks, it would ultimately help all of us to know how much of the data minipulation would allow all of us to expand the abilities in which we can showcase the more varied visualizations. 
 With the tableau data set, it is worth mentioning that the visualizations would create different/similar outcomes if we decided to go with the raw file. We ultimately wanted to utilze the cleaned version to avoid the null values that weren't available within the two data sets.
+One ther immport thing we found out very late in the process of this entire project, was the number of null values in our weekly_hours_viewed column (showing as the most important feature in our random forest model) that we filled in with zeros. Not thinking too much on how this could effect our models, we realized that it did in fact impact the predictions of the model, in the sense that it actually gave the answers for the model aheasd of time. This is a good example of data leakage and while the model performed very well with the featurtes inckluded, the results aren't as meaningful since we wouldn't have access to the weekly_hours_viewed data before the movie would become 'popular.' After figuring out all of this, we knew that this little matter isn't something we could rely on to make predictions outside of the Netflix internal team. 
+
+## Final thoughts - how Netflix could use this data
+1. Internal Validation
+• Test hypotheses about what makes a movie successful on the platform.
+• Identify which features (like viewership numbers or genre) most influence Top 10 appearances.
+Help data teams evaluate the impact of early engagement metrics.
+2. Predictive Power for In-House Releases
+• With access to early viewership data, Netflix can use the model internally to predict which new releases are trending toward Top 10.
+• Helps with marketing prioritization and promotional placement on the app.
+3. Content Strategy Insights
+• Identify patterns across successful titles to guide content acquisition or development.
+• For example, if certain genres or cast members consistently correlate with Top 10 success, that can guide future investments.
+4. Platform Optimization
+• Predict what should be featured more prominently on homepages to boost engagement.
+• Support algorithmic decisions behind carousels and featured banners.
+5. Forecasting Library Value
+• Estimate which existing titles in the Netflix catalog might resurge into popularity, helping with licensing decisions or planning seasonal marketing pushes.
