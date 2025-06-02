@@ -31,7 +31,7 @@ def predict():
         data = request.form.to_dict()
 
         # Defaults for optional inputs
-        data.setdefault('weekly_hours_viewed', 0)
+        # data.setdefault('weekly_hours_viewed', 0) #may not make a difference
         data.setdefault('cast2', 'Unknown')
         data.setdefault('cast3', 'Unknown')
         data.setdefault('cast4', 'Unknown')
