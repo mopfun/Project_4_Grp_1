@@ -31,5 +31,7 @@ Help data teams evaluate the impact of early engagement metrics.
 • Estimate which existing titles in the Netflix catalog might resurge into popularity, helping with licensing decisions or planning seasonal marketing pushes.
 
 Resources:
+
 Netflix - https://www.kaggle.com/datasets/sujaykapadnis/official-netflix-streaming-data?resource=download
+
 IMDb - https://www.kaggle.com/datasets/kianindeed/imdb-movie-dataset-dec-2023
